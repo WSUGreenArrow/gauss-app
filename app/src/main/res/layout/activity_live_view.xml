@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-
-
-    <VideoView
+    <SurfaceView
         android:layout_margin="5dp"
-        android:id="@+id/VideoView"
-        android:layout_width="250dp"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        />
+        android:id="@+id/surface"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"/>
 
-    <VideoView
-        android:layout_margin="5dp"
-        android:id="@+id/VideoView2"
-        android:layout_width="250dp"
-        android:layout_height="match_parent"
-        android:layout_alignParentRight="true"
-        />
 
-</RelativeLayout>
+</FrameLayout>

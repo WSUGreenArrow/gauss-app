@@ -2,6 +2,7 @@ package com.example.courtney.gauss;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -19,14 +20,13 @@ public class MainActivity extends AppCompatActivity {
                 " \nConnect or view saved content.", Toast.LENGTH_LONG).show();
 
 
-
         Button wifi = (Button)findViewById(R.id.find_network_btn);
         wifi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent startIntent = new Intent(MainActivity.this, WifiNetworksActivity.class);
-                startActivity(startIntent);
+                startActivity(new Intent(Settings.ACTION_WIFI_SETTINGS));
+
             }
         });
 

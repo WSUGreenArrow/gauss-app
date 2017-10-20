@@ -4,6 +4,9 @@
 
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
 
 
     <application
@@ -27,17 +30,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".WifiNetworksActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait">
-
-            <intent-filter>
-                <action android:name="android.intent.action.WIFI_ACTIVITY" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
 
         <activity
             android:name=".VTMConnectedActivity"
