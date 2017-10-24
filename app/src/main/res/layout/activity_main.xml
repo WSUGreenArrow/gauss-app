@@ -7,28 +7,39 @@
 
 
     <Button
-        android:layout_marginTop="130dp"
         android:id="@+id/find_network_btn"
         android:layout_height="100dp"
         android:layout_width="100dp"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/connect_to_network"/>
+        android:background="@drawable/connect_to_network"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/view_recordings_btn" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:text="Connect to VTM"
-        android:layout_below="@id/find_network_btn"
-        android:layout_centerHorizontal="true"/>
+        android:id="@+id/textView4"
+        android:layout_below="@+id/find_network_btn"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Record"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/record_video_btn"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/view_recordings_btn"
-        android:layout_below="@+id/find_network_btn"
         android:layout_height="100dp"
         android:layout_width="100dp"
-        android:layout_marginTop="60dp"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/view_recordings"/>
+        android:layout_marginTop="28dp"
+        android:background="@drawable/view_recordings"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
     <TextView
         android:layout_margin="5dp"
         android:layout_width="wrap_content"
@@ -47,5 +58,14 @@
         android:textColor="#fff"
         android:background="#000"
         android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/record_video_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/record"
+        android:text="Button"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/find_network_btn" />
 
 </RelativeLayout>

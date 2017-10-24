@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Gauss.iml" filepath="$PROJECT_DIR$/Gauss.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gauss-app-master.iml" filepath="$PROJECT_DIR$/gauss-app-master.iml" />
     </modules>
   </component>
 </project>
